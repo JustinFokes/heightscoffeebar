@@ -1,65 +1,140 @@
-import Image from "next/image";
+'use client'
+import Image from 'next/image';
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div
+      style={{
+        position: 'relative',
+        width: '100%',
+        height: '100vh',
+        overflow: 'hidden',
+        display: 'flex',
+        alignItems: 'flex-start', // content starts from top
+        justifyContent: 'center',
+        color: 'white',
+        textAlign: 'center',
+      }}
+    >
+      {/* Background image */}
+      <Image
+        src="/images/Heights-Coffee-Bar-1.jpg"
+        alt="Coffee background"
+        fill
+        style={{ zIndex: 1 }}
+        priority
+      />
+
+      {/* Semi-transparent overlay */}
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          backgroundColor: 'rgba(0, 0, 0, 0)',
+          zIndex: 2,
+        }}
+      />
+
+      {/* Main content */}
+      <div
+        style={{
+          position: 'relative',
+          zIndex: 3,
+          display: 'flex',
+          alignItems: 'right',
+          justifyContent: 'space-around',
+          width: '90%',
+          maxWidth: '1000px',
+          color: 'black',
+          marginTop: '1vh', // ✅ pushes content 15% from the top
+        }}
+      >
+        {/* Hours (Left) */}
+        <div
+          style={{
+            flex: '1',
+            textAlign: 'right',
+            fontSize: '1.1rem',
+            lineHeight: '1.8',
+            marginTop: '25px'
+          }}
+        >
+          <p>
+            <strong>Tuesday - Saturday</strong>
+            <br />
+            7a - 4p
+          </p>
+          <p>
+            <strong>Sunday & Monday</strong>
+            <br />
+            Closed
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        {/* Centered logo */}
+        <div
+          style={{
+            position: 'relative',
+            width: '300px',
+            height: '300px',
+            margin: '0 25px',
+            top: '-25px'
+          }}
+        >
+          <Image
+            src="/images/logo.png"
+            alt="Heights Coffee Bar logo"
+            fill
+            style={{
+              objectFit: 'contain',
+            }}
+            priority
+          />
         </div>
-      </main>
+
+        {/* Address & contact (Right) */}
+        <div
+          style={{
+            flex: '1',
+            textAlign: 'left',
+            fontSize: '1.1rem',
+            lineHeight: '1.8',
+            marginTop: '25px'
+          }}
+        >
+          <p>
+            850 40th Ave NE
+            <br />
+            Columbia Heights, MN 55421
+          </p>
+          <p>
+            <a
+              href="mailto:heightscoffeebar@gmail.com"
+              style={{ color: 'black', textDecoration: 'none' }}
+            >
+              heightscoffeebar@gmail.com
+            </a>
+            <br />
+            IG{' '}
+            <a
+              href="https://www.instagram.com/heightscoffeebar"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: 'black', textDecoration: 'none' }}
+            >
+              @heightscoffeebar
+            </a>
+            <br />
+            tel:{' '}
+            <a
+              href="tel:+16123149027"
+              style={{ color: 'black', textDecoration: 'none' }}
+            >
+              (612) 314-9027
+            </a>
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
