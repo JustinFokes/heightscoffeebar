@@ -74,6 +74,9 @@ export default function HomePage() {
               850 40th Ave NE<br />
               Columbia Heights, MN 55421
             </p>
+            <p>
+              Free Parking in the municipal lot across Van Buren
+            </p>
           </div>
 
           <div className="border-t border-white/40 pt-4">
@@ -141,6 +144,9 @@ export default function HomePage() {
             <p>
               850 40th Ave NE<br />
               Columbia Heights, MN 55421
+            </p>
+            <p className="text-sm">
+              (Free Parking in the municipal lot across Van Buren)
             </p>
             <a
               href="mailto:heightscoffeebar@gmail.com"
