@@ -29,8 +29,8 @@ export default function HomePage() {
         "
       >
         {/* ✅ Mobile Logo on Top */}
-        <div className="md:hidden flex justify-center mb-4 mt-6">
-          <div className="relative w-[220px] h-[220px]">
+        <div className="md:hidden flex justify-center m-0">
+          <div className="relative w-[200px] h-[200px]">
             <Image
               src="/images/logo.png"
               alt="Heights Coffee Bar logo"
@@ -48,8 +48,9 @@ export default function HomePage() {
             bg-white/50 backdrop-blur-sm border border-white/30 
             rounded-3xl shadow-[0_8px_32px_rgba(31,38,135,0.37)] 
             p-6 text-sm leading-relaxed 
-            space-y-6 w-full 
+            w-full 
             transition-all duration-300
+            -mt-5
           "
         >
           <div>
