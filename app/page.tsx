@@ -69,6 +69,11 @@ export default function HomePage() {
               <strong>Sunday & Monday</strong><br />
               Closed
             </p>
+            <a
+             className="text-black no-underline hover:underline"
+             href='https://app.squareup.com/gift/MLQZX4QQK4H8E/order'>
+             Purchase an eGift card
+            </a>
           </div>
 
           <div className="border-t border-white/40 pt-4">
@@ -109,6 +114,12 @@ export default function HomePage() {
               >
                 Facebook
               </a>
+            <a
+              className="text-black no-underline hover:underline"
+             href='https://sendfox.com/heightscoffeebar?utm_source=ig&utm_medium=social&utm_content=link_in_bio'
+            >
+              Newsletter
+            </a>
               <a
                 href="tel:+16123149027"
                 className="block text-black hover:underline"
@@ -135,6 +146,11 @@ export default function HomePage() {
               <strong>Sunday & Monday</strong><br />
               Closed
             </p>
+            <a
+             className="text-black no-underline hover:underline"
+             href='https://app.squareup.com/gift/MLQZX4QQK4H8E/order'>
+             Purchase an eGift card
+            </a>
           </div>
 
           {/* Center Logo */}
@@ -176,6 +192,12 @@ export default function HomePage() {
               className="text-black no-underline hover:underline"
             >
               Facebook
+            </a><br />
+            <a
+              className="text-black no-underline hover:underline"
+             href='https://sendfox.com/heightscoffeebar?utm_source=ig&utm_medium=social&utm_content=link_in_bio'
+            >
+              Newsletter
             </a><br />
             <a
               href="tel:+16123149027"
