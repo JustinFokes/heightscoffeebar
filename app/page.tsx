@@ -58,15 +58,15 @@ export default function HomePage() {
               Hours
             </h2>
             <p>
-              <strong>Tuesday - Friday</strong><br />
+              <strong>Wednesday - Friday</strong><br />
               7a - 4p
             </p>
             <p className="mt-3">
-              <strong>Saturday</strong><br />
+              <strong>Saturday - Sunday</strong><br />
               8a - 1p
             </p>
             <p className="mt-3">
-              <strong>Sunday & Monday</strong><br />
+              <strong>Monday & Tuesday</strong><br />
               Closed
             </p>
             <a
@@ -135,15 +135,15 @@ export default function HomePage() {
           {/* Hours (Left) */}
           <div className="flex-1 p-4 text-[1.1rem] leading-8 text-right">
             <p>
-              <strong>Tuesday - Friday</strong><br />
+              <strong>Wednesday - Friday</strong><br />
               7a - 4p
             </p>
             <p className="mt-3">
-              <strong>Saturday</strong><br />
+              <strong>Saturday - Sunday</strong><br />
               8a - 1p
             </p>
             <p className="mt-3">
-              <strong>Sunday & Monday</strong><br />
+              <strong>Monday - Tuesday</strong><br />
               Closed
             </p>
             <a
