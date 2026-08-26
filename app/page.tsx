@@ -65,6 +65,17 @@ export default function HomePage() {
               <strong>Wednesday - Friday</strong><br />
               7a - 4p
             </p>
+            <p className="mt-4 font-semibold">
+              New Hours Starting September 1
+            </p>
+            <p className="mt-1">
+              <strong>Monday - Friday</strong><br />
+              6a - 2p
+            </p>
+            <p className="mt-3">
+              <strong>Saturday & Sunday</strong><br />
+              7a - 1p
+            </p>
             <a
              className="text-black no-underline hover:underline"
              href='https://app.squareup.com/gift/MLQZX4QQK4H8E/order'>
@@ -137,6 +148,17 @@ export default function HomePage() {
             <p className="mt-3">
               <strong>Wednesday - Friday</strong><br />
               7a - 4p
+            </p>
+            <p className="mt-4 font-semibold">
+              New Hours Starting September 1
+            </p>
+            <p className="mt-1">
+              <strong>Monday - Friday</strong><br />
+              6a - 2p
+            </p>
+            <p className="mt-3">
+              <strong>Saturday & Sunday</strong><br />
+              7a - 1p
             </p>
             <a
              className="text-black no-underline hover:underline"
