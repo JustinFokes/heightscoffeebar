@@ -58,17 +58,6 @@ export default function HomePage() {
               Hours
             </h2>
             <p>
-              <strong>Saturday - Tuesday</strong><br />
-              7a - 1p
-            </p>
-            <p className="mt-3">
-              <strong>Wednesday - Friday</strong><br />
-              7a - 4p
-            </p>
-            <p className="mt-4 font-semibold">
-              New Hours Starting September 1
-            </p>
-            <p className="mt-1">
               <strong>Monday - Friday</strong><br />
               6a - 2p
             </p>
@@ -142,17 +131,6 @@ export default function HomePage() {
           {/* Hours (Left) */}
           <div className="flex-1 p-4 text-[1.1rem] leading-8 text-right">
             <p>
-              <strong>Saturday - Tuesday</strong><br />
-              7a - 1p
-            </p>
-            <p className="mt-3">
-              <strong>Wednesday - Friday</strong><br />
-              7a - 4p
-            </p>
-            <p className="mt-4 font-semibold">
-              New Hours Starting September 1
-            </p>
-            <p className="mt-1">
               <strong>Monday - Friday</strong><br />
               6a - 2p
             </p>
